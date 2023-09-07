@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-odno
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-nrpt-tenant/rhtap-demo-app/hacbs-test-project-odno@sha256:563251b74ce60cc67a017a84ba2336242a873725c7e9b16b61add878cbc4f50f
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
